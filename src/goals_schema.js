@@ -16,7 +16,12 @@ const goalSchema = new Schema({
       required: true,
       description: "Limit to achieve the goal",
     },
-    s3_imgName: {
+    s3_imgName_original: {
+      type: String,
+      required: true,
+      description: "Name of file in the S3 bucket",
+    },
+    s3_imgName_latest: {
       type: String,
       required: true,
       description: "Name of file in the S3 bucket",

@@ -32,10 +32,6 @@ const goalSchema = new Schema({
       description:"Quantity of pixels to diffum per day"
 
     },
-    diffum_color: {
-      type: [Number],
-      required: true,
-    },
     last_diffumDate: {
       type: Date,
       required: true,

@@ -4,7 +4,11 @@ const {Schema}=require("mongoose");
 const goalSchema = new Schema({
     user_id: {
       type: Schema.Types.ObjectId,
-      required: false,
+      required: true,
+    },
+    username:{
+      type:String,
+      required:true,
     },
     descr: {
       type: String,

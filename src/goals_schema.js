@@ -55,7 +55,7 @@ const goalSchema = new Schema({
     },
     s3_imgName_completed:{
       type: String,
-      required: true,
+      required: false,
       default: "",
       description: "Name of file in the S3 bucket when the goal is completed"
     }

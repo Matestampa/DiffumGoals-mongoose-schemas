@@ -49,13 +49,14 @@ const goalSchema = new Schema({
 
     completed:{
       type: Boolean,
-      required: false,
+      required: true,
       default: false,
       description: "Indicates if the goal has been completed"
     },
     s3_imgName_completed:{
       type: String,
-      required: false,
+      required: true,
+      default: "",
       description: "Name of file in the S3 bucket when the goal is completed"
     }
   }, {

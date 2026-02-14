@@ -45,6 +45,18 @@ const goalSchema = new Schema({
       required: false,
       default: false,
       description: "Indicates if the goal has expired"
+    },
+
+    completed:{
+      type: Boolean,
+      required: false,
+      default: false,
+      description: "Indicates if the goal has been completed"
+    },
+    s3_imgName_completed:{
+      type: String,
+      required: false,
+      description: "Name of file in the S3 bucket when the goal is completed"
     }
   }, {
     timestamps: { createdAt: true, updatedAt: false }

@@ -58,6 +58,12 @@ const goalSchema = new Schema({
       required: false,
       default: "",
       description: "Name of file in the S3 bucket when the goal is completed"
+    },
+    completed_date:{
+      type: Date,
+      required: false,
+      default: null,
+      description: "Date when the goal was completed"
     }
   }, {
     timestamps: { createdAt: true, updatedAt: false }

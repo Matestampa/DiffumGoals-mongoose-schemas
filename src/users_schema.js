@@ -6,9 +6,18 @@ const userSchema = new Schema({
         required:true,
         unique:true
     },
-    password:{
+    provider_type : {
+        type:String,
+        required:true
+    },
+    provider_id : {
         type:String,
         required:true,
+        unique:true
+    },
+    email:{
+        type:String,
+        default:null
     }
 })
 
